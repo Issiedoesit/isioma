@@ -12,5 +12,23 @@
   --font-playfair-display: "Playfair Display", serif; 
   --font-poppins: "Poppins", sans-serif;
   --font-montserrat: "montserrat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-accent-orange: #8B4513;
+  --color-primary: #0663ef;
+  --color-background-light: #fdfdfc;
+  --color-background-dark: #0F1723;
+  --color-neutral-dark: #1A1A1A;
+  --radius-default: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 9999px;
 }
 
+
+@utility technical-grid {
+  background-image:
+    linear-gradient(to right, rgb(139 69 19 / 15%) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(139 69 19 / 15%) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
