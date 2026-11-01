@@ -8,6 +8,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Works from './Works'
+import ProjectIndex from './ProjectIndex'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
@@ -55,8 +56,10 @@ const Home = () => {
         {/* HERO */}
         <Hero />
 
-        {/* WORKS */}
-        <Works />
+        {/* WORKS
+        <Works /> */}
+        {/* PROJECTS */}
+        <ProjectIndex />
 
       <div className='stack--footer h-screen relative'>
             {/* STACK */}
