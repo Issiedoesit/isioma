@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='footer--section absolute inset-0 h-screen px-8 bg-background-light dark:bg-background-dark py-24  min-h-screen border-t-[0.5px] border-t-neutral-400 dark:border-t-slate-400'>
       <div className='space-y-6 flex flex-col items-center'>
         <Spec number={"05"} label={"Reach Me"} />
-        <h1 class="uppercase text-center text-6xl md:text-7xl xl:text-8xl font-black tracking-tight leading-[0.9] text-neutral-dark dark:text-slate-100">
+        <h1 className="uppercase text-center text-6xl md:text-7xl xl:text-8xl font-black tracking-tight leading-[0.9] text-neutral-dark dark:text-slate-100">
           LET'S BUILD<br />SOMETHING REAL.
         </h1>
         <p className='max-w-md text-center text-sm text-neutral-600 dark:text-slate-400 tracking-tighter'>Always available to translate your designs into responsive real life masterpieces. Say Hello 👋🏾 and let's talk!</p>
@@ -17,12 +17,12 @@ const Footer = () => {
             <div className='w-12 h-12 flex items-center justify-center border text-neutral-dark dark:text-white border-neutral-dark/10 dark:border-background-light/10 rounded-full hover:bg-neutral-dark hover:text-white dark:hover:bg-background-light/10 dark:hover:text-accent-orange transition-all cursor-pointer'><MdOutlineShare className='text-3xl' /></div>
         </div>
       </div>
-      <div class="pt-24 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest text-neutral-400 gap-4">
+      <div className="pt-24 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest text-neutral-400 gap-4">
 <p>© 2026 Isioma Ekwemuka Portfolio</p>
-<div class="flex gap-8">
-<a class="hover:text-neutral-dark" href="#">Privacy</a>
-<a class="hover:text-neutral-dark" href="#">Terms</a>
-<a class="hover:text-neutral-dark" href="#">Source</a>
+<div className="flex gap-8">
+<a className="hover:text-neutral-dark dark:hover:text-background-light" href="https://github.com/issiedoesit" target='_blank'>GITHUB</a>
+<a className="hover:text-neutral-dark dark:hover:text-background-light" href="https://www.linkedin.com/in/ekwemuka-isioma/" target='_blank'>LINKEDIN</a>
+<a className="hover:text-neutral-dark dark:hover:text-background-light" href="https://x.com/Issie_TBH" target='_blank'>X</a>
 </div>
 <p>Built with technical precision & love 💗 </p>
 </div>

@@ -7,6 +7,7 @@ import PlaySection from './PlaySection'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Works from './Works'
 
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
@@ -53,6 +54,9 @@ const Home = () => {
         <NavBar/>
         {/* HERO */}
         <Hero />
+
+        {/* WORKS */}
+        <Works />
 
       <div className='stack--footer h-screen relative'>
             {/* STACK */}

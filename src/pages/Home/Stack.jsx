@@ -66,10 +66,10 @@ const Stack = () => {
         <div className='stack--section relative z-10 technical-grid flex flex-col lg:grid lg:grid-cols-3 gap-10 bg-background-light dark:bg-background-dark min-h-screen py-8 px-4'>
             <div className='col-span-1 space-y-6 md:space-y-4'>
                 <Spec number={"03"} label={"Architecture"} />
-                <h1 class="text-6xl md:text-7xl xl:text-8xl font-black tracking-tight leading-[0.9] text-neutral-dark dark:text-slate-100">
+                <h1 className="text-6xl md:text-7xl xl:text-8xl font-black tracking-tight leading-[0.9] text-neutral-dark dark:text-slate-100">
                     Frontend <br />Engineer.
                 </h1>
-                <p class="max-w-xl text-lg text-neutral-600 dark:text-slate-400 leading-relaxed font-light">
+                <p className="max-w-xl text-lg text-neutral-600 dark:text-slate-400 leading-relaxed font-light">
                     Architecting performant, scalable web applications with a focus on React ecosystems and technical logic. Specialized in bridging the gap between high-end design and engineering precision.
                 </p>
                 <div className='flex flex-col gap-2 mt-8 py-8 border-t-[0.5px] border-t-neutral-400 dark:border-t-slate-400`'>
@@ -93,10 +93,10 @@ const Stack = () => {
                         <StackCard key={idx} stack={stk.name} number={stk.number} info={stk.info} colStart={stk.colStart} rowStart={stk.rowStart} txtColor={stk.txtColor} bgColor={stk.bgColor} borderColor={stk.borderColor} />
                     ))
                 }
-            <div class="hidden md:absolute inset-0 md:flex items-center justify-center pointer-events-none opacity-20">
-            <svg class="w-full h-full" fill="none" viewBox="0 0 600 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M100 100 L300 200 L500 100" stroke="#8B4513" stroke-width="1"></path>
-            <path d="M100 300 L300 200 L500 300" stroke="#8B4513" stroke-width="1"></path>
+            <div className="hidden md:absolute inset-0 md:flex items-center justify-center pointer-events-none opacity-20">
+            <svg className="w-full h-full" fill="none" viewBox="0 0 600 400" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100 100 L300 200 L500 100" stroke="#8B4513" strokeWidth="1"></path>
+            <path d="M100 300 L300 200 L500 300" stroke="#8B4513" strokeWidth="1"></path>
             </svg> 
             </div>           
             </div>
