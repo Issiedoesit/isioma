@@ -3,8 +3,36 @@ import NavBar from '../../components/Nav/NavBar'
 import Stack from './Stack'
 import Hero from './Hero'
 import Footer from './Footer'
+import PlaySection from './PlaySection'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(useGSAP, ScrollTrigger)
+
 
 const Home = () => {
+
+    useGSAP(() => {
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.stack--footer',
+        start: 'top top',
+        // start: '50% 50%',
+        end: '+=200%',
+        pin: true,
+        scrub: 2,
+        // markers: true,
+      }
+    })
+
+    tl.to('.stack--section', {
+      y: '-100%',
+      ease: 'none',
+    })
+
+  })
   return (
     <div className='bg-background-light dark:bg-background-dark'>
         {/* HERO SECTION */}
@@ -26,10 +54,15 @@ const Home = () => {
         {/* HERO */}
         <Hero />
 
-        {/* STACK */}
+      <div className='stack--footer h-screen relative'>
+            {/* STACK */}
         <Stack />
         {/* FOOTER */}
         <Footer />
+      </div>
+
+        {/* TRY OUT ANIMATIONS */}
+        {/* <PlaySection /> */}
     </div>
   )
 }
