@@ -4,7 +4,7 @@ import { MdOutlineLink, MdOutlineShare } from "react-icons/md"
 
 const Footer = () => {
   return (
-    <div className='footer--section absolute inset-0 h-screen px-8 bg-background-light dark:bg-background-dark py-24  min-h-screen border-t-[0.5px] border-t-neutral-400 dark:border-t-slate-400'>
+    <div id="footer" className='footer--section absolute inset-0 h-screen px-8 bg-background-light dark:bg-background-dark py-24  min-h-screen border-t-[0.5px] border-t-neutral-400 dark:border-t-slate-400'>
       <div className='space-y-6 flex flex-col items-center'>
         <Spec number={"05"} label={"Reach Me"} />
         <h1 className="uppercase text-center text-6xl md:text-7xl xl:text-8xl font-black tracking-tight leading-[0.9] text-neutral-dark dark:text-slate-100">

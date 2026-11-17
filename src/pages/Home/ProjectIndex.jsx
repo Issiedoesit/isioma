@@ -327,7 +327,7 @@ const ProjectRow = ({
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 font-bold text-sm uppercase tracking-widest hover:text-accent transition-colors"
+              className="inline-flex items-center gap-3 font-bold text-sm uppercase tracking-widest hover:text-accent-orange transition-colors"
             >
               View Project <span>↗</span>
             </a>

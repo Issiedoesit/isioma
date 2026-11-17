@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Clean Off-White Surface -->
+    <linearGradient id="bgGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F4F4F6"/>
+    </linearGradient>
+
+    <!-- Calibrated Warm Amber Accent for Light Backgrounds -->
+    <linearGradient id="accentGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <!-- Precision Dot Grid in Charcoal Tint -->
+    <pattern id="dotGridLight" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#18181B" fill-opacity="0.07"/>
+    </pattern>
+
+    <!-- Subtle Optical Grounding Shadow for Light Mode -->
+    <filter id="softShadowLight" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.05"/>
+    </filter>
+  </defs>
+
+  <!-- Container & Blueprint Dot Grid -->
+  <rect width="512" height="512" rx="64" fill="url(#bgGradLight)" stroke="#E4E4E7" stroke-width="2"/>
+  <rect width="512" height="512" rx="64" fill="url(#dotGridLight)"/>
+
+  <!-- Outer Structural Border / Engineering Frame -->
+  <rect x="40" y="40" width="432" height="432" rx="40" fill="none" stroke="#18181B" stroke-opacity="0.1" stroke-width="1.5"/>
+
+  <!-- Precision Corner Calibration Ticks -->
+  <path d="M 40 64 L 64 64 M 64 40 L 64 64" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 472 64 L 448 64 M 448 40 L 448 64" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-opacity="0.2"/>
+  <path d="M 40 448 L 64 448 M 64 472 L 64 448" stroke="#18181B" stroke-width="2" stroke-linecap="round" stroke-opacity="0.2"/>
+  <path d="M 472 448 L 448 448 M 448 472 L 448 448" stroke="#D97706" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Centered Architectural 'I' and 'E' Monogram in Charcoal (#18181B) -->
+  <g transform="translate(136, 126)" filter="url(#softShadowLight)">
+    <!-- Primary Pillar 'I' with Amber Accent Node -->
+    <rect x="0" y="0" width="38" height="260" rx="6" fill="#18181B"/>
+    <circle cx="19" cy="0" r="7" fill="url(#accentGradLight)"/>
+
+    <!-- Intersecting 'E' Top Arm -->
+    <path d="M 38 19 L 210 19 Q 224 19 224 33 L 224 45 Q 224 57 210 57 L 76 57" fill="none" stroke="#18181B" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- 'E' Middle Arm with Amber Accent Bar & Terminal Node -->
+    <path d="M 38 130 L 160 130" stroke="url(#accentGradLight)" stroke-width="36" stroke-linecap="round"/>
+    <circle cx="188" cy="130" r="9" fill="url(#accentGradLight)"/>
+
+    <!-- 'E' Bottom Arm -->
+    <path d="M 38 241 L 210 241 Q 224 241 224 227 L 224 215 Q 224 203 210 203 L 76 203" fill="none" stroke="#18181B" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Technical Monospace Sub-label -->
+  <g transform="translate(256, 432)" text-anchor="middle">
+    <text font-family="'JetBrains Mono', 'Fira Code', 'SF Mono', monospace" font-size="14" font-weight="700" fill="#27272A" letter-spacing="0.28em">ISIOMA EKWEMUKA</text>
+  </g>
+</svg>

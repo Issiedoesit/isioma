@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Subtle Dark Charcoal/Slate Depth -->
+    <linearGradient id="bgGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0d0e"/>
+      <stop offset="100%" stop-color="#18191c"/>
+    </linearGradient>
+
+    <!-- Warm Amber Tech Gradient -->
+    <linearGradient id="accentGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e08844"/>
+      <stop offset="100%" stop-color="#c86d2b"/>
+    </linearGradient>
+
+    <!-- Architectural Dot Grid -->
+    <pattern id="dotGridDark" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Container & Blueprint Dot Grid -->
+  <rect width="512" height="512" rx="64" fill="url(#bgGradDark)"/>
+  <rect width="512" height="512" rx="64" fill="url(#dotGridDark)"/>
+
+  <!-- Outer Structural Border / Engineering Frame -->
+  <rect x="40" y="40" width="432" height="432" rx="40" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.5"/>
+
+  <!-- Precision Corner Calibration Ticks -->
+  <path d="M 40 64 L 64 64 M 64 40 L 64 64" stroke="#e08844" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8"/>
+  <path d="M 472 64 L 448 64 M 448 40 L 448 64" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-opacity="0.2"/>
+  <path d="M 40 448 L 64 448 M 64 472 L 64 448" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-opacity="0.2"/>
+  <path d="M 472 448 L 448 448 M 448 472 L 448 448" stroke="#e08844" stroke-width="2" stroke-linecap="round" stroke-opacity="0.8"/>
+
+  <!-- Centered Architectural 'I' and 'E' Monogram -->
+  <g transform="translate(136, 126)">
+    <!-- Primary Pillar 'I' with Terminal Accent Node -->
+    <rect x="0" y="0" width="38" height="260" rx="6" fill="#f4f4f5"/>
+    <circle cx="19" cy="0" r="7" fill="url(#accentGradDark)"/>
+
+    <!-- Intersecting 'E' Top Arm -->
+    <path d="M 38 19 L 210 19 Q 224 19 224 33 L 224 45 Q 224 57 210 57 L 76 57" fill="none" stroke="#f4f4f5" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- 'E' Middle Arm with Amber Accent Bar & Terminal Node -->
+    <path d="M 38 130 L 160 130" stroke="url(#accentGradDark)" stroke-width="36" stroke-linecap="round"/>
+    <circle cx="188" cy="130" r="9" fill="url(#accentGradDark)"/>
+
+    <!-- 'E' Bottom Arm -->
+    <path d="M 38 241 L 210 241 Q 224 241 224 227 L 224 215 Q 224 203 210 203 L 76 203" fill="none" stroke="#f4f4f5" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Technical Monospace Sub-label -->
+  <g transform="translate(256, 428)" text-anchor="middle">
+    <text font-family="'JetBrains Mono', 'Fira Code', 'SF Mono', monospace" font-size="13" font-weight="600" fill="#a1a1aa" letter-spacing="0.28em">ISIOMA EKWEMUKA</text>
+  </g>
+</svg>

@@ -70,8 +70,7 @@ const Stack = () => {
                     Frontend <br />Engineer.
                 </h1>
                 <p className="max-w-xl text-lg text-neutral-600 dark:text-slate-400 leading-relaxed font-light">
-                    Architecting performant, scalable web applications with a focus on React ecosystems and technical logic. Specialized in bridging the gap between high-end design and engineering precision.
-                </p>
+                    Building scalable, performant web applications with React, Tailwind CSS, and GSAP. Combining thoughtful frontend architecture, reusable components, and interactive motion to create engaging digital experiences.                </p>
                 <div className='flex flex-col gap-2 mt-8 py-8 border-t-[0.5px] border-t-neutral-400 dark:border-t-slate-400`'>
                     <div className='flex items-center gap-4'>
                         <div className='h-3 w-3 bg-accent-orange'></div>
